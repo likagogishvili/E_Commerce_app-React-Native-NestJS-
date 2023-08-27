@@ -4,7 +4,7 @@ import { Ionicons, Fontisto } from "@expo/vector-icons";
 import styles from "./home.style";
 import React from "react";
 import { Welcome } from "../../components";
-import Carousel from "../carousel/Carousel";
+import Carousel from "../Carousel/Carousel";
 import Headings from "../../components/home/Headings";
 import ProductRow from "../../components/products/ProductRow";
 

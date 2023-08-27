@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.FurnitureService = void 0;
 const common_1 = require("@nestjs/common");
@@ -47,6 +48,6 @@ exports.FurnitureService = FurnitureService;
 exports.FurnitureService = FurnitureService = __decorate([
     (0, common_1.Injectable)(),
     __param(0, (0, mongoose_1.InjectModel)(furniture_scema_1.Furniture.name)),
-    __metadata("design:paramtypes", [mongoose.Model])
+    __metadata("design:paramtypes", [typeof (_a = typeof mongoose !== "undefined" && mongoose.Model) === "function" ? _a : Object])
 ], FurnitureService);
 //# sourceMappingURL=furniture.service.js.map
