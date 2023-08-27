@@ -1,35 +1,47 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
 # dependencies
 node_modules/
 
-# Expo
-.expo/
-dist/
-web-build/
+# IDE
+/.idea
+/.awcache
+/.vscode
+/.devcontainer
+*.code-workspace
 
-# Native
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
 
-# Metro
-.metro-health-check*
+# bundle
+packages/**/*.d.ts
+packages/**/*.js
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
+# misc
 .DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
+lerna-debug.log
+npm-debug.log
+yarn-error.log
+/**/npm-debug.log
+/packages/**/.npmignore
+/packages/**/LICENSE
 *.tsbuildinfo
+
+# example
+/quick-start
+/example_dist
+/example
+
+# tests
+/test
+/benchmarks/memory
+/coverage
+/.nyc_output
+/packages/graphql
+/benchmarks/memory
+build/config\.gypi
+
+.npmrc
+pnpm-lock.yaml
