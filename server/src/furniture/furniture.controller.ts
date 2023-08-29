@@ -6,10 +6,10 @@ import {
   Param,
   Post,
   Put,
-} from '@nestjs/common';
-import { FurnitureService } from './furniture.service';
-import { Furniture } from './schemas/furniture.scema';
-@Controller('furniture')
+} from "@nestjs/common";
+import { FurnitureService } from "./furniture.service";
+import { Furniture } from "./schemas/furniture.scema";
+@Controller("furniture")
 export class FurnitureController {
   constructor(private furnitureService: FurnitureService) {}
   @Get()
@@ -17,30 +17,30 @@ export class FurnitureController {
     return this.furnitureService.findAll();
   }
 
-  @Post('create')
+  @Post("create")
   async createFurniture(@Body() furnitureData: Furniture): Promise<Furniture> {
     return this.furnitureService.create(furnitureData);
   }
-  @Get(':id')
+  @Get(":id")
   async getFurniture(
-    @Param('id')
-    id: string,
+    @Param("id")
+    id: string
   ): Promise<Furniture> {
     return this.furnitureService.findById(id);
   }
-  @Put(':id')
+  @Put(":id")
   async updateFurniture(
-    @Param('id')
+    @Param("id")
     id: string,
-    @Body() furnitureData: Furniture,
+    @Body() furnitureData: Furniture
   ): Promise<Furniture> {
     return this.furnitureService.updateById(id, furnitureData);
   }
 
-  @Delete(':id')
+  @Delete(":id")
   async deleteFurniture(
-    @Param('id')
-    id: string,
+    @Param("id")
+    id: string
   ): Promise<Furniture> {
     return this.furnitureService.deleteById(id);
   }

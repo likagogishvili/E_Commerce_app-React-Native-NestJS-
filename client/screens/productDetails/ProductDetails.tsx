@@ -41,10 +41,10 @@ function ProductDetails() {
           <Ionicons name="heart" size={30} color={COLORS.primary} />
         </TouchableOpacity>
       </View>
-      <Image source={img.slide1} style={styles.image} />
+      <Image source={{ uri: item.imageURL }} style={styles.image} />
       <View style={styles.details}>
         <View style={styles.titleRow}>
-          <Text style={styles.title}>product</Text>
+          <Text style={styles.title}>{item.title}</Text>
           <View style={styles.priceWrapper}>
             <Text style={styles.price}>$220.11</Text>
           </View>
@@ -70,24 +70,13 @@ function ProductDetails() {
         </View>
         <View style={styles.descriprionWrapper}>
           <Text style={styles.description}>Description</Text>
-          <Text style={styles.descText}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas
-            integer eget aliquet nibh praesent tristique. Quisque id diam vel
-            quam elementum. Dolor sit amet consectetur adipiscing elit
-            pellentesque habitant morbi tristique. Rutrum tellus pellentesque eu
-            tincidunt tortor. Cras semper auctor neque vitae tempus quam. Ornare
-            lectus sit amet est placerat. At imperdiet dui accumsan sit amet.
-            Aliquam nulla facilisi cras fermentum odio. Ut porttitor leo a diam
-            sollicitudin tempor id eu. Accumsan sit amet nulla facilisi morbi
-            tempus iaculis.
-          </Text>
+          <Text style={styles.descText}>{item.description}</Text>
         </View>
         <View style={{ marginBottom: SIZES.small }}>
           <View style={styles.location}>
             <View style={{ flexDirection: "row" }}>
               <Ionicons name="location-outline" size={20} />
-              <Text> Tbilisi</Text>
+              <Text> {item.product_location}</Text>
             </View>
             <View style={{ flexDirection: "row" }}>
               <MaterialCommunityIcons name="truck-delivery-outline" size={20} />
