@@ -1,5 +1,5 @@
 import { ActivityIndicator, FlatList, Text, View } from "react-native";
-import styles from "./prodactRow.style";
+import styles from "./productRow.style";
 import { COLORS, SIZES } from "../../constants";
 import ProductCardView from "./ProductCardView";
 import UseFetch from "../../hook/useFetch";

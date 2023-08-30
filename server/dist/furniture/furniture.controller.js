@@ -44,36 +44,36 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], FurnitureController.prototype, "getAllFurniture", null);
 __decorate([
-    (0, common_1.Post)('create'),
+    (0, common_1.Post)("create"),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [furniture_scema_1.Furniture]),
     __metadata("design:returntype", Promise)
 ], FurnitureController.prototype, "createFurniture", null);
 __decorate([
-    (0, common_1.Get)(':id'),
-    __param(0, (0, common_1.Param)('id')),
+    (0, common_1.Get)(":id"),
+    __param(0, (0, common_1.Param)("id")),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", Promise)
 ], FurnitureController.prototype, "getFurniture", null);
 __decorate([
-    (0, common_1.Put)(':id'),
-    __param(0, (0, common_1.Param)('id')),
+    (0, common_1.Put)(":id"),
+    __param(0, (0, common_1.Param)("id")),
     __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String, furniture_scema_1.Furniture]),
     __metadata("design:returntype", Promise)
 ], FurnitureController.prototype, "updateFurniture", null);
 __decorate([
-    (0, common_1.Delete)(':id'),
-    __param(0, (0, common_1.Param)('id')),
+    (0, common_1.Delete)(":id"),
+    __param(0, (0, common_1.Param)("id")),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [String]),
     __metadata("design:returntype", Promise)
 ], FurnitureController.prototype, "deleteFurniture", null);
 exports.FurnitureController = FurnitureController = __decorate([
-    (0, common_1.Controller)('furniture'),
+    (0, common_1.Controller)("furniture"),
     __metadata("design:paramtypes", [furniture_service_1.FurnitureService])
 ], FurnitureController);
 //# sourceMappingURL=furniture.controller.js.map

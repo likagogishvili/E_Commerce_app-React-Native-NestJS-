@@ -1,5 +1,5 @@
-import { FurnitureService } from './furniture.service';
-import { Furniture } from './schemas/furniture.scema';
+import { FurnitureService } from "./furniture.service";
+import { Furniture } from "./schemas/furniture.scema";
 export declare class FurnitureController {
     private furnitureService;
     constructor(furnitureService: FurnitureService);

@@ -8,7 +8,6 @@ import {
 } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { COLORS, SIZES } from "../../constants";
-import * as img from "../../constants/images";
 import { useState } from "react";
 import { useRoute } from "@react-navigation/native";
 import { FurnitureData } from "../../types/dataTypes";
@@ -16,7 +15,6 @@ import { FurnitureData } from "../../types/dataTypes";
 function ProductDetails() {
   const route = useRoute();
   const { item } = route.params as { item: FurnitureData };
-  console.log(item);
   const [count, setCount] = useState(1);
   const increment = () => {
     setCount(count + 1);
