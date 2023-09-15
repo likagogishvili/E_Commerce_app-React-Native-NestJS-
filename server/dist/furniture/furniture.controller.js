@@ -44,6 +44,7 @@ __decorate([
     __metadata("design:returntype", Promise)
 ], FurnitureController.prototype, "getAllFurniture", null);
 __decorate([
+    (0, common_1.HttpCode)(204),
     (0, common_1.Post)("create"),
     __param(0, (0, common_1.Body)()),
     __metadata("design:type", Function),
